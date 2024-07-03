@@ -1,0 +1,40 @@
+@import '../utils/variables';
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-title;
+    font-weight: 600;
+    line-height: 1;
+
+}
+
+
+p,
+span, a {
+    font-family: $font-title;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 22px;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.span-red {
+    color: #D90512;
+    font-weight: 600;
+}

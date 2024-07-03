@@ -1,0 +1,39 @@
+@import '../utils/variables';
+@import '../utils/animations';
+
+.desktop-nav {
+    position: relative;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    padding: 0 50px;
+    background-color: #FFF;
+
+    .nav-logo {
+        width: 350px;
+    }
+
+    .nav-links {
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+
+        .nav-link {
+            padding: 0 20px;
+            color: #231F20;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 500;
+
+            &:first-child {
+                padding-left: 0;
+            }
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+}
