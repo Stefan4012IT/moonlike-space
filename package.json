@@ -1,7 +1,7 @@
 {
   "name": "moonlight-react",
   "version": "0.1.0",
-  "homepage": "https://github.com/Stefan4012IT/moonlike-space",
+  "homepage": "https://stefan4012it.github.io/moonlike-space/",
   "private": true,
   "dependencies": {
     "@react-three/drei": "^9.108.1",
