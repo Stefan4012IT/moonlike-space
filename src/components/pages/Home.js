@@ -67,17 +67,18 @@ function Home() {
   return (
     <>
       <Navbar />
+
       <div className="hero" style={{ opacity }}>
         <MatrixRain />
         <div className="hero-front">
           <div className="grid-item item1"></div>
-          <div className="grid-item item2"><h2>Mo<span className='span-red'>o</span>nlike.space</h2></div>
+          <div className="grid-item item2"><div className="background-img-1"></div><h2 className='hero-title'>Mo<span className='span-red'>o</span>nlike.space</h2></div>
           <div className="grid-item item3">
-            <div className="overlay"></div>
+            <div className="background-img-2"><div className="overlay"></div></div>
             <div className="grid-item-text"><p>We are <span className='span-red'>creative</span> web design <span className='span-red'>studio</span>. Creating usable products for your needs. If you have a questions, and would like to manage your business with a passion, please, contact us.</p></div>
           </div>
           <div className="grid-item item4">
-            <div className="overlay"></div>
+          <div className="background-img-3"><div className="overlay"></div></div>
             <div className="grid-item-text"><p>At mo<span className='span-red'>o</span>nlike.space, we believe that every business deserves a unique digital presence that truly reflects its values and vision.</p></div>
           </div>
         </div>
