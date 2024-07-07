@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo, useRef } from 'react';
 import Navbar from '../Navbar/Navbar'
 import MatrixRain from '../Elements/MatrixRain'
 import WaveCanvas from '../Elements/WaveCanvas'
+import HeroTitle from '../Elements/HeroTitle'
 
 function Home() {
   const [opacity, setOpacity] = useState(1);
@@ -72,7 +73,7 @@ function Home() {
         <MatrixRain />
         <div className="hero-front">
           <div className="grid-item item1"></div>
-          <div className="grid-item item2"><div className="background-img-1"></div><h2 className='hero-title'>Mo<span className='span-red'>o</span>nlike.space</h2></div>
+          <div className="grid-item item2"><div className="background-img-1"></div><HeroTitle /></div>
           <div className="grid-item item3">
             <div className="background-img-2"><div className="overlay"></div></div>
             <div className="grid-item-text"><p>We are <span className='span-red'>creative</span> web design <span className='span-red'>studio</span>. Creating usable products for your needs. If you have a questions, and would like to manage your business with a passion, please, contact us.</p></div>

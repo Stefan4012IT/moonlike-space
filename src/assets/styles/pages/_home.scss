@@ -40,7 +40,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            animation: border-left-right 1s forwards 3s;
+            animation: border-left 1s forwards 3s, border-right 1s forwards 3s,  border-right-down .5s forwards 4s;
 
 
             .background-img-1 {
@@ -52,7 +52,7 @@
                 background-size: cover;
                 width: 100%;
                 height: 100%;
-                animation: opacity-1 2s forwards 4s;
+                animation: opacity-1 2s forwards 4.5s;
             }
 
             
@@ -64,16 +64,49 @@
                 .span-red {
                     font-size: 56px;
                 }
+
+                .hero-dynamic {
+                    // animation: blink 1s step-end infinite;
+                    font-size: 56px;
+                    font-weight: inherit;
+                }
+
+                  @keyframes blink {
+                    from, to {
+                      border-color: transparent;
+                    }
+                    50% {
+                      border-color: #fff;
+                    }
+                  }
             }
 
-            @keyframes border-left-right {
+            @keyframes border-left {
                 from{
                     border-left: 1px solid #FFF; 
-                    border-right: 1px solid #FFF; 
                     height: 0;
                 }
                 to{
                     border-left: 1px solid #FFF; 
+                    height: 100%;
+                }
+            }
+            @keyframes border-right {
+                from{
+                    border-right: 1px solid #FFF; 
+                    height: 0;
+                }
+                to{
+                    border-right: 1px solid #FFF; 
+                    height: 50%;
+                }
+            }
+            @keyframes border-right-down {
+                from{
+                    border-right: 1px solid #FFF; 
+                    height: 50%;
+                }
+                to{
                     border-right: 1px solid #FFF; 
                     height: 100%;
                 }
