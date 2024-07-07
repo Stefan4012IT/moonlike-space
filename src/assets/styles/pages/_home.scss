@@ -60,23 +60,41 @@
                 z-index: 1000;
                 color: #fff;
                 opacity: 0;
-                animation: opacity-3 1s forwards 6s;
+                // animation: opacity-3 1s forwards 6s;
                 .span-red {
                     font-size: 56px;
                 }
 
                 .hero-dynamic {
-                    // animation: blink 1s step-end infinite;
                     font-size: 56px;
                     font-weight: inherit;
                 }
 
                   @keyframes blink {
-                    from, to {
-                      border-color: transparent;
+                    0% {
+                        opacity: .2;
+                    }
+    
+                    30% {
+                        opacity: .5;
                     }
                     50% {
-                      border-color: #fff;
+                        opacity: .4;
+                    }
+                    70% {
+                        opacity: .2;
+                    }
+                    75% {
+                        opacity: .7;
+                    }
+                    80% {
+                        opacity: .1;
+                    }
+                    90% {
+                        opacity: .7;
+                    }
+                    to {
+                        opacity: 1;
                     }
                   }
             }

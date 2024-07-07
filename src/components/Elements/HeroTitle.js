@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 const HeroTitle = () => {
     useEffect(() => {
         const target = document.querySelector('.hero-dynamic');
+        const title = document.querySelector('.hero-title');
         const words = ['Jagger', 'light', 'space'];
         let wordIndex = 0;
         let charIndex = 0;
@@ -11,9 +12,11 @@ const HeroTitle = () => {
         const type = () => {
             const currentWord = words[wordIndex];
             const currentText = currentWord.slice(0, charIndex);
+            title.style.opacity = '1';
 
             if (wordIndex === words.length - 1 && charIndex === currentWord.length) {
                 target.textContent = currentText;
+                title.style.animation = 'none'; // Prestanak treperenja na kraju
                 return;
             } else {
                 target.textContent = currentText + '_';
@@ -23,12 +26,16 @@ const HeroTitle = () => {
                 charIndex++;
                 setTimeout(type, 150);
             } else if (isDeleting && charIndex > 0) {
+                title.style.animation = 'none';
                 charIndex--;
                 setTimeout(type, 100);
             } else if (!isDeleting && charIndex === currentWord.length) {
+                title.style.animation = 'blink .4s forwards .3s';
                 setTimeout(() => {
+
                     isDeleting = true;
                     type();
+
                 }, 2000);
             } else if (isDeleting && charIndex === 0) {
                 isDeleting = false;
