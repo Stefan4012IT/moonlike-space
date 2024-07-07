@@ -95,12 +95,12 @@ function Home() {
       </div>
       {memoizedWaveCanvas}
       <section className="content-section section-who-we-are" ref={(el) => sectionsRef.current[0] = el}>
-        <h2>Who we are?</h2>
+        <h3>Who we are?</h3>
         <p>We are mo<span className='span-red'>o</span>nlike.space, a <span className='span-red'>creative</span> web design <span className='span-red'>studio</span> dedicated to crafting innovative and user-friendly digital solutions tailored to your specific needs. Our young and enthusiastic team is passionate about blending aesthetics with functionality to deliver products that not only look great but also provide an exceptional user experience.</p>
         <p>At moonlike.space, we believe in the power of creativity and technology to transform ideas into reality. Our team of designers, developers, and strategists work collaboratively to bring your vision to life, ensuring that every project we undertake is executed with precision and creativity.</p>
       </section>
       <section className="content-section why-moonlike-space" ref={(el) => sectionsRef.current[1] = el}>
-        <h2>Why Mo<span className='span-red'>o</span>nlike._?</h2>
+        <h3>Why Mo<span className='span-red'>o</span>nlike._?</h3>
         <h4><span className='span-red'>Young and Dynamic Team:</span></h4>
         <p>Our team is composed of passionate enthusiasts who bring fresh perspectives and innovative ideas to every project.</p>
         <h4><span className='span-red'>Tailored Solutions:</span></h4>
@@ -109,7 +109,7 @@ function Home() {
         <p>Your satisfaction is our priority. We are dedicated to providing exceptional service and support throughout your project journey.</p>
       </section>
       <section className="content-section get-what-you-want" ref={(el) => sectionsRef.current[2] = el}>
-        <h2>Get What You Want</h2>
+        <h3>Get What You Want</h3>
         <p>Our approach is centered around understanding your specific needs and delivering solutions that exceed your expectations. Here’s how we ensure you get exactly what you want:</p>
         <h4><span className='span-red'>Tailored Expertise:</span></h4>
         <p>We bring our specialized knowledge and skills to every project, ensuring that you receive a solution that is expertly crafted to meet your specific needs. Our team of young, dynamic professionals is committed to delivering top-notch results with precision and creativity.</p>
