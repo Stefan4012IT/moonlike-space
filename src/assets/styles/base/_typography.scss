@@ -27,6 +27,10 @@ h1 {
 h2 {
     font-size: 64px;
     font-weight: 600;
+
+    @media only screen and (max-width: 992px) {
+        font-size: 36px;
+    }
 }
 
 h4 {

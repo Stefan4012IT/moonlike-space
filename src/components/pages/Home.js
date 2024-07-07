@@ -12,7 +12,13 @@ function Home() {
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
     const maxScroll = window.innerHeight;
-    const newOpacity = 1 - scrollPosition / (maxScroll * .75);
+    // Provera širine ekrana
+    const isMobile = window.innerWidth < 992;
+
+    // Prilagodjavanje formule za opacity u zavisnosti od veličine ekrana
+    const newOpacity = isMobile
+      ? 1 - scrollPosition / (maxScroll * 3.5)  // Sporije opadanje opacity na manjim ekranima
+      : 1 - scrollPosition / (maxScroll * 0.75);
     setOpacity(newOpacity >= 0 ? newOpacity : 0);
 
     const newOpacities = sectionsRef.current.map((section) => {
@@ -34,17 +40,20 @@ function Home() {
   }, []);
 
   useEffect(() => {
+    // Provera širine ekrana
+    const isMobile = window.innerWidth < 992;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           const index = sectionsRef.current.indexOf(entry.target);
+
           if (index !== -1) {
             entry.target.style.opacity = entry.intersectionRatio;
             console.log(entry);
           }
 
           if (index === 2) {
-            entry.target.style.opacity = entry.intersectionRatio + .2;
+            !isMobile ? entry.target.style.opacity = entry.intersectionRatio + .2 : entry.target.style.opacity = entry.intersectionRatio + .5;
           }
 
         });
@@ -79,7 +88,7 @@ function Home() {
             <div className="grid-item-text"><p>We are <span className='span-red'>creative</span> web design <span className='span-red'>studio</span>. Creating usable products for your needs. If you have a questions, and would like to manage your business with a passion, please, contact us.</p></div>
           </div>
           <div className="grid-item item4">
-          <div className="background-img-3"><div className="overlay"></div></div>
+            <div className="background-img-3"><div className="overlay"></div></div>
             <div className="grid-item-text"><p>At mo<span className='span-red'>o</span>nlike.space, we believe that every business deserves a unique digital presence that truly reflects its values and vision.</p></div>
           </div>
         </div>

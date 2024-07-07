@@ -7,6 +7,12 @@
     overflow: hidden;
     transition: opacity 0.3s ease;
 
+    @media only screen and (max-width: 992px) {
+        width: 100%;
+        height: auto;
+        animation: none;
+    }
+
     p, a, span {
         font-size: 20px;
     }
@@ -20,12 +26,21 @@
         grid-template-rows: 1fr 1fr;
         gap: 0; 
         z-index: 1000;
+
+        @media only screen and (max-width: 992px) {
+            display: flex;
+            flex-direction: column;
+        }
         
 
         .item1 {
             grid-column: 1 / 2; 
             grid-row: 1 / 3; 
             background-color: transparent;
+
+            @media only screen and (max-width: 992px) {
+                display: none;
+            }
         }
 
         .item2 {
@@ -42,6 +57,11 @@
             justify-content: center;
             animation: border-left 1s forwards 3s, border-right 1s forwards 3s,  border-right-down .5s forwards 4s;
 
+            @media only screen and (max-width: 992px) {
+                width: 100%;
+                height: calc(100dvh - var(--visina-headera));
+                animation: none;
+            }
 
             .background-img-1 {
                 position: absolute;
@@ -53,6 +73,10 @@
                 width: 100%;
                 height: 100%;
                 animation: opacity-1 2s forwards 4.5s;
+
+                @media only screen and (max-width: 992px) {
+                    background-position: center;
+                }
             }
 
             
@@ -63,11 +87,17 @@
                 // animation: opacity-3 1s forwards 6s;
                 .span-red {
                     font-size: 56px;
+                    @media only screen and (max-width: 992px) {
+                        font-size: 36px;
+                    }
                 }
 
                 .hero-dynamic {
-                    font-size: 56px;
+                    font-size: 64px;
                     font-weight: inherit;
+                    @media only screen and (max-width: 992px) {
+                        font-size: 36px;
+                    }
                 }
 
                   @keyframes blink {
@@ -183,6 +213,12 @@
             border-bottom: 1px solid transparent; 
             animation: border-bottom 1s forwards 3s;
 
+            @media only screen and (max-width: 992px) {
+                width: 100%;
+                height: 50dvh;
+                animation: none;
+            }
+
             .background-img-2 {
                 position: absolute;
                 top: 0;
@@ -220,6 +256,12 @@
             background-image: none;
             border-top: 1px solid transparent; 
             animation: border-top 1s forwards 3s;
+
+            @media only screen and (max-width: 992px) {
+                width: 100%;
+                height: 50dvh;
+                animation: none;
+            }
 
             .background-img-3 {
                 position: absolute;
@@ -275,6 +317,11 @@
                 opacity: 0;
                 animation: opacity-3 1.5s forwards 4s;
 
+                @media only screen and (max-width: 992px) {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+
                 @keyframes opacity-3 {
                     from {
                         opacity: 0;
@@ -309,12 +356,22 @@
     max-width: 1200px;
     margin: auto;
     padding-top: 150px;
+
+    @media only screen and (max-width: 992px) {
+        padding-top: 50px;
+        width: 90%;
+        margin: 0 auto;
+    }
   }
 
   .section-who-we-are {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    // @media only screen and (max-width: 992px) {
+    //     width: 90%;
+    //     margin: 0 auto;
+    // }
     h2 {
         padding-bottom: 30px;
     }
