@@ -43,6 +43,45 @@ body {
     background-color: #000;
 }
 
+    /* Prilagođavanje scroll bara */
+    ::-webkit-scrollbar {
+        width: 8px; /* Širina scroll bara */
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: #000; /* Boja pozadine */
+        border-radius: 0px; /* Zaobljeni uglovi */
+        transition: all .3s;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: #FFF; /* Boja klizača */
+        border-radius: 0px; /* Zaobljeni uglovi */
+        border: 1px solid #D90512; /* Dodavanje prostora između klizača i trake */
+        transition: all .3s;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: #fff; /* Boja klizača pri hover efektu */
+      }
+
+      /* Stilizacija selektovanog teksta */
+::selection {
+    background: #D90512; /* Boja pozadine selektovanog teksta */
+    color: #FFF; /* Boja slova selektovanog teksta */
+  }
+  
+  /* Za WebKit pretraživače */
+  ::-webkit-selection {
+    background: #D90512; /* Boja pozadine selektovanog teksta */
+    color: #FFF; /* Boja slova selektovanog teksta */
+  }
+  
+  /* Za Mozilla Firefox */
+  ::-moz-selection {
+    background: #D90512; /* Boja pozadine selektovanog teksta */
+    color: #FFF; /* Boja slova selektovanog teksta */
+  }
 ol, ul {
     list-style: none;
 }
