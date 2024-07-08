@@ -76,6 +76,7 @@
 
                 @media only screen and (max-width: 992px) {
                     background-position: center;
+                    animation: opacity-1 2s forwards 2.5s;
                 }
             }
 
@@ -232,6 +233,10 @@
                 height: 100%;
                 animation: opacity-3 4s forwards 4s;
 
+                @media only screen and (max-width: 992px) {
+                    opacity: 1;
+                    animation: none;
+                }
                 
             }
 
@@ -273,6 +278,11 @@
                 width: 100%;
                 height: 100%;
                 animation: opacity-3 2.5s forwards 4s;
+
+                @media only screen and (max-width: 992px) {
+                    opacity: 1;
+                    animation: none;
+                }
 
                 @keyframes opacity-3 {
                     from {

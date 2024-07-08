@@ -8,6 +8,10 @@ const HeroTitle = () => {
         let wordIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
+        // Provera širine ekrana
+        const isMobile = window.innerWidth < 992;
+
+        const time = isMobile ? 3500 : 7000;
 
         const type = () => {
             const currentWord = words[wordIndex];
@@ -46,7 +50,7 @@ const HeroTitle = () => {
             }
         };
 
-        setTimeout(type, 7000); // Kašnjenje od 3 sekunde pre početka
+        setTimeout(type, time); // Kašnjenje od 3 sekunde pre početka
 
     }, []);
 
