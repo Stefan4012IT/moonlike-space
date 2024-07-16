@@ -95,18 +95,24 @@ function Home() {
       </div>
       {memoizedWaveCanvas}
       <section className="content-section section-who-we-are" ref={(el) => sectionsRef.current[0] = el}>
-        <h3>Who we are?</h3>
-        <p>We are mo<span className='span-red'>o</span>nlike.space, a <span className='span-red'>creative</span> web design <span className='span-red'>studio</span> dedicated to crafting innovative and user-friendly digital solutions tailored to your specific needs. Our young and enthusiastic team is passionate about blending aesthetics with functionality to deliver products that not only look great but also provide an exceptional user experience.</p>
-        <p>At mo<span className='span-red'>o</span>nlike.space, we believe in the power of creativity and technology to transform ideas into reality. Our team of designers, developers, and strategists work collaboratively to bring your vision to life, ensuring that every project we undertake is executed with precision and creativity.</p>
+        <div className="ease-layer-overlay">
+          <h3>Who we are?</h3>
+          <p>We are mo<span className='span-red'>o</span>nlike.space, a <span className='span-red'>creative</span> web design <span className='span-red'>studio</span> dedicated to crafting innovative and user-friendly digital solutions tailored to your specific needs. Our young and enthusiastic team is passionate about blending aesthetics with functionality to deliver products that not only look great but also provide an exceptional user experience.</p>
+          <p>At mo<span className='span-red'>o</span>nlike.space, we believe in the power of creativity and technology to transform ideas into reality. Our team of designers, developers, and strategists work collaboratively to bring your vision to life, ensuring that every project we undertake is executed with precision and creativity.</p>
+        </div>
+
       </section>
-      <section className="content-section why-moonlike-space" ref={(el) => sectionsRef.current[1] = el}>
-        <h3>Why Mo<span className='span-red'>o</span>nlike._?</h3>
-        <h4><span className='span-red'>Young and Dynamic Team:</span></h4>
-        <p>Our team is composed of passionate enthusiasts who bring fresh perspectives and innovative ideas to every project.</p>
-        <h4><span className='span-red'>Tailored Solutions:</span></h4>
-        <p> We take the time to understand your business and create customized solutions that fit your specific requirements.</p>
-        <h4><span className='span-red'>Customer-Centric Approach:</span></h4>
-        <p>Your satisfaction is our priority. We are dedicated to providing exceptional service and support throughout your project journey.</p>
+      <section id='why-moonlike-space' className="content-section why-moonlike-space" ref={(el) => sectionsRef.current[1] = el}>
+        <div className="ease-layer-overlay">
+          <h3>Why Mo<span className='span-red'>o</span>nlike._?</h3>
+          <h4><span className='span-red'>Young and Dynamic Team:</span></h4>
+          <p>Our team is composed of passionate enthusiasts who bring fresh perspectives and innovative ideas to every project.</p>
+          <h4><span className='span-red'>Tailored Solutions:</span></h4>
+          <p> We take the time to understand your business and create customized solutions that fit your specific requirements.</p>
+          <h4><span className='span-red'>Customer-Centric Approach:</span></h4>
+          <p>Your satisfaction is our priority. We are dedicated to providing exceptional service and support throughout your project journey.</p>
+        </div>
+
       </section>
       <section className="content-section get-what-you-want" ref={(el) => sectionsRef.current[2] = el}>
         <h3>Get What You Want</h3>

@@ -15,7 +15,9 @@ function DesktopNav() {
             <div className="nav-logo"><img src={logo_1} alt="logo_moonlike_space" /></div>
             <div className="nav-links">
                 <NavLink to="/" className="nav-link"><span>Who We Are?</span></NavLink>
-                <NavLink to="/" className="nav-link"><span>Why Moonlike._?</span></NavLink>
+                <NavLink to="/" className="nav-link" onClick={() => {
+                    document.getElementById('why-moonlike-space').scrollIntoView({ behavior: 'smooth' });
+                }}><span>Why Moonlike._?</span></NavLink>
                 <NavLink to="/" className="nav-link"><span>Get What You Want</span></NavLink>
                 <NavLink to="/" className="nav-link"><span>Contact us</span></NavLink>
             </div>
