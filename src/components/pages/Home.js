@@ -115,20 +115,22 @@ function Home() {
 
       </section>
       <section className="content-section get-what-you-want" ref={(el) => sectionsRef.current[2] = el}>
-        <h3>Get What You Want</h3>
-        <p>Our approach is centered around understanding your specific needs and delivering solutions that exceed your expectations. Here’s how we ensure you get exactly what you want:</p>
-        <h4><span className='span-red'>Tailored Expertise:</span></h4>
-        <p>We bring our specialized knowledge and skills to every project, ensuring that you receive a solution that is expertly crafted to meet your specific needs. Our team of young, dynamic professionals is committed to delivering top-notch results with precision and creativity.</p>
-        <h4><span className='span-red'>Direct Communication:</span></h4>
-        <p>We prioritize clear and direct communication to ensure that we understand your requirements perfectly. By cutting out unnecessary back-and-forth, we streamline the process and deliver your project efficiently and effectively.</p>
-        <h4><span className='span-red'>Strong Execution:</span></h4>
-        <p>With a focus on strong execution, we take pride in our ability to deliver high-quality work that speaks for itself. Our projects are completed with meticulous attention to detail, ensuring that you receive a product that not only meets but exceeds your expectations.</p>
-        <h4><span className='span-red'>Trust and Reliability:</span></h4>
-        <p>We understand the importance of trust in any business relationship. Our track record of successful projects and satisfied clients speaks volumes about our reliability and commitment. When you choose mo<span className='span-red'>o</span>nlike.space, you can be confident that your project is in capable hands.</p>
-        <h4><span className='span-red'>Powerful Solutions:</span></h4>
-        <p>Our team is dedicated to creating powerful digital solutions that drive results. Whether it’s a stunning website, an impactful social media campaign, or a comprehensive digital strategy, we harness our expertise to deliver outcomes that make a difference.</p>
-        <h4><span className='span-red'>One-and-Done Excellence:</span></h4>
-        <p>We believe in doing the job right the first time. Our one-and-done approach ensures that your project is completed to the highest standard, eliminating the need for constant revisions and adjustments. We get it right, so you can move forward with confidence.</p>
+        <div className="ease-layer-overlay">
+          <h3>Get What You Want</h3>
+          <p>Our approach is centered around understanding your specific needs and delivering solutions that exceed your expectations. Here’s how we ensure you get exactly what you want:</p>
+          <h4><span className='span-red'>Tailored Expertise:</span></h4>
+          <p>We bring our specialized knowledge and skills to every project, ensuring that you receive a solution that is expertly crafted to meet your specific needs. Our team of young, dynamic professionals is committed to delivering top-notch results with precision and creativity.</p>
+          <h4><span className='span-red'>Direct Communication:</span></h4>
+          <p>We prioritize clear and direct communication to ensure that we understand your requirements perfectly. By cutting out unnecessary back-and-forth, we streamline the process and deliver your project efficiently and effectively.</p>
+          <h4><span className='span-red'>Strong Execution:</span></h4>
+          <p>With a focus on strong execution, we take pride in our ability to deliver high-quality work that speaks for itself. Our projects are completed with meticulous attention to detail, ensuring that you receive a product that not only meets but exceeds your expectations.</p>
+          <h4><span className='span-red'>Trust and Reliability:</span></h4>
+          <p>We understand the importance of trust in any business relationship. Our track record of successful projects and satisfied clients speaks volumes about our reliability and commitment. When you choose mo<span className='span-red'>o</span>nlike.space, you can be confident that your project is in capable hands.</p>
+          <h4><span className='span-red'>Powerful Solutions:</span></h4>
+          <p>Our team is dedicated to creating powerful digital solutions that drive results. Whether it’s a stunning website, an impactful social media campaign, or a comprehensive digital strategy, we harness our expertise to deliver outcomes that make a difference.</p>
+          <h4><span className='span-red'>One-and-Done Excellence:</span></h4>
+          <p>We believe in doing the job right the first time. Our one-and-done approach ensures that your project is completed to the highest standard, eliminating the need for constant revisions and adjustments. We get it right, so you can move forward with confidence.</p>
+        </div>
       </section>
       <section className="content-section get-what-you-want" ref={(el) => sectionsRef.current[3] = el}>
 

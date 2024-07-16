@@ -449,6 +449,15 @@
     flex-direction: column;
     align-items: flex-start;
     opacity: 1;
+
+    .ease-layer-overlay {
+        position: relative;
+        background-color: rgba($color: transparent, $alpha: .5);
+        padding: 30px 20px;
+        border-radius: 15px;
+        box-shadow:  #D90512 0px 0px 5px;
+    }
+    
     h3 {
         padding-bottom: 30px;
 
