@@ -85,51 +85,38 @@ function Home() {
           <div className="grid-item item2"><div className="background-img-1"></div><HeroTitle /></div>
           <div className="grid-item item3">
             <div className="background-img-2"><div className="overlay"></div></div>
-            <div className="grid-item-text"><p>We are <span className='span-red'>creative</span> web design <span className='span-red'>studio</span>. Creating usable products for your needs. If you have a questions, and would like to manage your business with a passion, please, contact us.</p></div>
+            <div className="grid-item-text"><p>Mo<span className='span-red'>o</span>nlike.space is a <span className='span-red'>creative</span> web design <span className='span-red'>studio</span>. Creating usable products for your needs. If you have a questions, and would like to manage your business with a passion, please, contact us.</p></div>
           </div>
           <div className="grid-item item4">
             <div className="background-img-3"><div className="overlay"></div></div>
-            <div className="grid-item-text"><p>At mo<span className='span-red'>o</span>nlike.space, we believe that every business deserves a unique digital presence that truly reflects its values and vision.</p></div>
+            <div className="grid-item-text"><p>Mo<span className='span-red'>o</span>nlike.space believes every business deserves a unique digital presence that truly reflects its values and vision.</p></div>
           </div>
         </div>
       </div>
       {memoizedWaveCanvas}
-      <section className="content-section section-who-we-are" ref={(el) => sectionsRef.current[0] = el}>
+      <section id='intro' className="content-section section-who-we-are" ref={(el) => sectionsRef.current[0] = el}>
         <div className="ease-layer-overlay">
-          <h3>Who we are?</h3>
-          <p>We are mo<span className='span-red'>o</span>nlike.space, a <span className='span-red'>creative</span> web design <span className='span-red'>studio</span> dedicated to crafting innovative and user-friendly digital solutions tailored to your specific needs. Our young and enthusiastic team is passionate about blending aesthetics with functionality to deliver products that not only look great but also provide an exceptional user experience.</p>
-          <p>At mo<span className='span-red'>o</span>nlike.space, we believe in the power of creativity and technology to transform ideas into reality. Our team of designers, developers, and strategists work collaboratively to bring your vision to life, ensuring that every project we undertake is executed with precision and creativity.</p>
+          <h3>Intro</h3>
+          <p>Welcome to Mo<span className='span-red'>o</span>nlike.space — where creativity meets digital rebellion. A creative web design studio fueled by the drive to craft innovative, user-friendly digital solutions tailored exactly to what you need. It’s all about blending aesthetics with functionality to create digital experiences that don't just look good — they work for you.</p>
+          <p>Every project is built on straightforward principles: design with purpose, create with clarity, and deliver results that matter. No gimmicks, no over-the-top promises—just solid digital tools crafted to help you succeed. Let’s keep it simple, focused, and effective.</p>
         </div>
 
       </section>
       <section id='why-moonlike-space' className="content-section why-moonlike-space" ref={(el) => sectionsRef.current[1] = el}>
         <div className="ease-layer-overlay">
           <h3>Why Mo<span className='span-red'>o</span>nlike._?</h3>
-          <h4><span className='span-red'>Young and Dynamic Team:</span></h4>
-          <p>Our team is composed of passionate enthusiasts who bring fresh perspectives and innovative ideas to every project.</p>
-          <h4><span className='span-red'>Tailored Solutions:</span></h4>
-          <p> We take the time to understand your business and create customized solutions that fit your specific requirements.</p>
-          <h4><span className='span-red'>Customer-Centric Approach:</span></h4>
-          <p>Your satisfaction is our priority. We are dedicated to providing exceptional service and support throughout your project journey.</p>
+          <p>Choosing Mo<span className='span-red'>o</span>nlike.space means opting for a fresh approach to digital design. Forget the cookie-cutter solutions — here, every project is a chance to do something unique. It’s all about finding what works best for the specific needs of each business, crafting customized solutions that are as effective as they are innovative.</p>
+          <p>This is a place where new ideas flourish, where the goal is always to push boundaries and create digital experiences that stand out. It's not about following trends; it's about setting them. A focus on delivering value drives every decision, every design choice, ensuring that the final product not only meets but exceeds expectations.</p>
+          <p>The commitment is simple: clear communication, focused execution, and results that speak for themselves. No overblown promises or empty buzzwords — just a dedication to getting the job done right and making sure every client feels the impact of truly effective digital work. Here, the goal is to make things happen and make them happen well.</p>
         </div>
 
       </section>
-      <section className="content-section get-what-you-want" ref={(el) => sectionsRef.current[2] = el}>
+      <section id='get-what-you-want' className="content-section get-what-you-want" ref={(el) => sectionsRef.current[2] = el}>
         <div className="ease-layer-overlay">
           <h3>Get What You Want</h3>
-          <p>Our approach is centered around understanding your specific needs and delivering solutions that exceed your expectations. Here’s how we ensure you get exactly what you want:</p>
-          <h4><span className='span-red'>Tailored Expertise:</span></h4>
-          <p>We bring our specialized knowledge and skills to every project, ensuring that you receive a solution that is expertly crafted to meet your specific needs. Our team of young, dynamic professionals is committed to delivering top-notch results with precision and creativity.</p>
-          <h4><span className='span-red'>Direct Communication:</span></h4>
-          <p>We prioritize clear and direct communication to ensure that we understand your requirements perfectly. By cutting out unnecessary back-and-forth, we streamline the process and deliver your project efficiently and effectively.</p>
-          <h4><span className='span-red'>Strong Execution:</span></h4>
-          <p>With a focus on strong execution, we take pride in our ability to deliver high-quality work that speaks for itself. Our projects are completed with meticulous attention to detail, ensuring that you receive a product that not only meets but exceeds your expectations.</p>
-          <h4><span className='span-red'>Trust and Reliability:</span></h4>
-          <p>We understand the importance of trust in any business relationship. Our track record of successful projects and satisfied clients speaks volumes about our reliability and commitment. When you choose mo<span className='span-red'>o</span>nlike.space, you can be confident that your project is in capable hands.</p>
-          <h4><span className='span-red'>Powerful Solutions:</span></h4>
-          <p>Our team is dedicated to creating powerful digital solutions that drive results. Whether it’s a stunning website, an impactful social media campaign, or a comprehensive digital strategy, we harness our expertise to deliver outcomes that make a difference.</p>
-          <h4><span className='span-red'>One-and-Done Excellence:</span></h4>
-          <p>We believe in doing the job right the first time. Our one-and-done approach ensures that your project is completed to the highest standard, eliminating the need for constant revisions and adjustments. We get it right, so you can move forward with confidence.</p>
+          <p>Success starts with a clear understanding of what’s needed. Mo<span className='span-red'>o</span>nlike.space takes pride in delivering solutions that not only meet expectations but go beyond. The focus is always on the details that matter most — crafting digital experiences that are as functional as they are visually striking.</p>
+          <p>Specialized skills come into play with every project, providing solutions that are precisely tailored to specific business needs. It’s all about efficiency, cutting through the noise, and focusing on what really counts: creating impactful results without unnecessary complications.</p>
+          <p>Clear, straightforward communication is key. No drawn-out back-and-forths — just a direct path from concept to completion. This streamlined approach ensures strong execution every time, with a commitment to quality that leaves no room for compromise.</p>
         </div>
       </section>
       <section className="content-section get-what-you-want" ref={(el) => sectionsRef.current[3] = el}>
