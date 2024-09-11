@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/moonlike-space/static/css/main.1ab126e0.css",
-    "main.js": "/moonlike-space/static/js/main.38d28c5f.js",
+    "main.css": "/moonlike-space/static/css/main.209e4bdd.css",
+    "main.js": "/moonlike-space/static/js/main.35912392.js",
     "static/media/goodSaveAstronauts.jpg": "/moonlike-space/static/media/goodSaveAstronauts.024c52c08e0fdcf3d026.jpg",
     "static/media/HelveticaNeueBlackItalic.otf": "/moonlike-space/static/media/HelveticaNeueBlackItalic.d99ac0e3506201a73a09.otf",
     "static/media/HelveticaNeueHeavyItalic.otf": "/moonlike-space/static/media/HelveticaNeueHeavyItalic.cb727392ea5d930c11e2.otf",
@@ -24,11 +24,11 @@
     "static/media/HelveticaNeueMediumItalic.otf": "/moonlike-space/static/media/HelveticaNeueMediumItalic.38fa5648357fd78bc0b7.otf",
     "static/media/logo_moonlike_1.svg": "/moonlike-space/static/media/logo_moonlike_1.4a23dc5ded2ff9bd680a65fdf6260cd5.svg",
     "index.html": "/moonlike-space/index.html",
-    "main.1ab126e0.css.map": "/moonlike-space/static/css/main.1ab126e0.css.map",
-    "main.38d28c5f.js.map": "/moonlike-space/static/js/main.38d28c5f.js.map"
+    "main.209e4bdd.css.map": "/moonlike-space/static/css/main.209e4bdd.css.map",
+    "main.35912392.js.map": "/moonlike-space/static/js/main.35912392.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ab126e0.css",
-    "static/js/main.38d28c5f.js"
+    "static/css/main.209e4bdd.css",
+    "static/js/main.35912392.js"
   ]
 }
