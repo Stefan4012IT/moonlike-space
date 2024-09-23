@@ -3,6 +3,7 @@ import Navbar from '../Navbar/Navbar'
 import MatrixRain from '../Elements/MatrixRain'
 import WaveCanvas from '../Elements/WaveCanvas'
 import HeroTitle from '../Elements/HeroTitle'
+import ContactForm from '../Elements/ContactForm';
 
 function Home() {
   const [opacity, setOpacity] = useState(1);
@@ -49,7 +50,6 @@ function Home() {
 
           if (index !== -1) {
             entry.target.style.opacity = entry.intersectionRatio;
-            console.log(entry);
           }
 
           if (index === 2) {
@@ -102,7 +102,13 @@ function Home() {
         </div>
 
       </section>
-      <section id='why-moonlike-space' className="content-section why-moonlike-space" ref={(el) => sectionsRef.current[1] = el}>
+      <section id="catalyst" className='catalyst content-section' ref={(el) => sectionsRef.current[1] = el}>
+        <div className="ease-layer-overlay">
+          <div className="catalyst-img-1"></div>
+          <h3>Take the initiative, be the catalyst.</h3>
+        </div>
+      </section>
+      <section id='why-moonlike-space' className="content-section why-moonlike-space" ref={(el) => sectionsRef.current[2] = el}>
         <div className="ease-layer-overlay">
           <h3>Why Mo<span className='span-red'>o</span>nlike._?</h3>
           <p>Choosing Mo<span className='span-red'>o</span>nlike.space means opting for a fresh approach to digital design. Forget the cookie-cutter solutions — here, every project is a chance to do something unique. It’s all about finding what works best for the specific needs of each business, crafting customized solutions that are as effective as they are innovative.</p>
@@ -111,7 +117,7 @@ function Home() {
         </div>
 
       </section>
-      <section id='get-what-you-want' className="content-section get-what-you-want" ref={(el) => sectionsRef.current[2] = el}>
+      <section id='get-what-you-want' className="content-section get-what-you-want" ref={(el) => sectionsRef.current[3] = el}>
         <div className="ease-layer-overlay">
           <h3>Get What You Want</h3>
           <p>Success starts with a clear understanding of what’s needed. Mo<span className='span-red'>o</span>nlike.space takes pride in delivering solutions that not only meet expectations but go beyond. The focus is always on the details that matter most — crafting digital experiences that are as functional as they are visually striking.</p>
@@ -119,8 +125,8 @@ function Home() {
           <p>Clear, straightforward communication is key. No drawn-out back-and-forths — just a direct path from concept to completion. This streamlined approach ensures strong execution every time, with a commitment to quality that leaves no room for compromise.</p>
         </div>
       </section>
-      <section className="content-section get-what-you-want" ref={(el) => sectionsRef.current[3] = el}>
-
+      <section className="content-section get-what-you-want" ref={(el) => sectionsRef.current[4] = el}>
+        <ContactForm />
       </section>
     </>
   )
